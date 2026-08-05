@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\282864\\Estrutura de Dados\\Atividades\\Vetores\\vetores\\vetores.csproj",
+      "projectUniqueName": "C:\\Users\\282864\\Downloads\\Atividades\\Vetores\\vetores\\vetores.csproj",
       "projectName": "vetores",
-      "projectPath": "C:\\Users\\282864\\Estrutura de Dados\\Atividades\\Vetores\\vetores\\vetores.csproj",
+      "projectPath": "C:\\Users\\282864\\Downloads\\Atividades\\Vetores\\vetores\\vetores.csproj",
       "packagesPath": "C:\\Users\\282864\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\282864\\Estrutura de Dados\\Atividades\\Vetores\\vetores\\obj\\",
+      "outputPath": "C:\\Users\\282864\\Downloads\\Atividades\\Vetores\\vetores\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
