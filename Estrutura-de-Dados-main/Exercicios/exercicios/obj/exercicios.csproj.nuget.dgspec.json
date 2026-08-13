@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\282864\\Downloads\\Nova pasta\\Estrutura-de-Dados\\Estrutura-de-Dados-main\\Exercicios\\exercicios\\exercicios.csproj": {}
+    "C:\\Users\\282864\\Downloads\\Estrutura de Dados\\Estrutura-de-Dados\\Estrutura-de-Dados-main\\Exercicios\\exercicios\\exercicios.csproj": {}
   },
   "projects": {
-    "C:\\Users\\282864\\Downloads\\Nova pasta\\Estrutura-de-Dados\\Estrutura-de-Dados-main\\Exercicios\\exercicios\\exercicios.csproj": {
+    "C:\\Users\\282864\\Downloads\\Estrutura de Dados\\Estrutura-de-Dados\\Estrutura-de-Dados-main\\Exercicios\\exercicios\\exercicios.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\282864\\Downloads\\Nova pasta\\Estrutura-de-Dados\\Estrutura-de-Dados-main\\Exercicios\\exercicios\\exercicios.csproj",
+        "projectUniqueName": "C:\\Users\\282864\\Downloads\\Estrutura de Dados\\Estrutura-de-Dados\\Estrutura-de-Dados-main\\Exercicios\\exercicios\\exercicios.csproj",
         "projectName": "exercicios",
-        "projectPath": "C:\\Users\\282864\\Downloads\\Nova pasta\\Estrutura-de-Dados\\Estrutura-de-Dados-main\\Exercicios\\exercicios\\exercicios.csproj",
+        "projectPath": "C:\\Users\\282864\\Downloads\\Estrutura de Dados\\Estrutura-de-Dados\\Estrutura-de-Dados-main\\Exercicios\\exercicios\\exercicios.csproj",
         "packagesPath": "C:\\Users\\282864\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\282864\\Downloads\\Nova pasta\\Estrutura-de-Dados\\Estrutura-de-Dados-main\\Exercicios\\exercicios\\obj\\",
+        "outputPath": "C:\\Users\\282864\\Downloads\\Estrutura de Dados\\Estrutura-de-Dados\\Estrutura-de-Dados-main\\Exercicios\\exercicios\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
