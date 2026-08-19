@@ -1,4 +1,4 @@
-﻿string palavra = "";
+﻿string palavra = " ";
 
 Console.WriteLine("Digite uma palavra:");
 palavra = Console.ReadLine();
