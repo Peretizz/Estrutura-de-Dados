@@ -21,6 +21,7 @@ for (int i = 0; i < newNumbersBi.GetLength(0); i++)
 {
     for (int j = 0; j < newNumbersBi.GetLength(1); j++)
     {
-        Console.WriteLine($"Elemento [{i},{j}] = {newNumbersBi[i,j]}");
+        Console.WriteLine($"{newNumbersBi[i,j]}");
     }
+    Console.WriteLine("");
 }
