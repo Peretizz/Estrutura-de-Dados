@@ -48,3 +48,5 @@ do{
         Console.WriteLine("A média dos valores informados é: " + numbers.Average());
     }
 } while (run);
+
+// Listas de tipos abstratos de dados (TAD)
