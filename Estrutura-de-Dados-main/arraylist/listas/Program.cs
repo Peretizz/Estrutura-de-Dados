@@ -1,5 +1,8 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using System.Globalization;
+using System.Linq;
+
 // ArrayLists
 
 ArrayList arrayList = new ArrayList ();
@@ -74,3 +77,46 @@ people.Add(new Person()
     Age = 39,
     Nationality = CountryEnum.PY
 });
+
+people.Add(new Person() 
+{ 
+    Name = "Messi",
+    Age = 42,
+    Nationality = CountryEnum.AR
+});
+
+List<Person> results = people.OrderBy(p => p.Name).ToList();
+
+foreach (Person p in results)
+{
+    Console.WriteLine($"Nome: {p.Name}, Idade: {p.Age}, Nacionalidade: {p.Nationality}");
+}
+
+// SortedList
+SortedList<string, Person> sortedPeople = new SortedList<string, Person>();
+
+sortedPeople.Add("Marcin", new Person()
+{
+    Name = "Marcin",
+    Age = 29,
+    Nationality = CountryEnum.BR
+});
+
+sortedPeople.Add("Sabine", new Person()
+{
+    Name = "Sabine",
+    Age = 25,
+    Nationality = CountryEnum.DE
+});
+
+sortedPeople.Add("Ann", new Person()
+{
+    Name = "Ann",
+    Age = 31,
+    Nationality = CountryEnum.BR
+});
+
+foreach (KeyValuePair<string, Person> person in sortedPeople)
+{
+    Console.WriteLine($"{person.Value.Name} ({person.Value.Age} years) from {person.Value.Nationality}.");
+}

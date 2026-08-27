@@ -13,5 +13,5 @@ public class Person
 
 public enum CountryEnum
 {
-    BR, US, AR, PY
+    BR, US, AR, PY, PL, UK, DE
 }
