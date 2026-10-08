@@ -1,72 +1,60 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections.Generic;
 
-Hashtable phoneBook = new Hashtable() {
-    {"Edilio Junior", "0000"},
-    {"Bruno Antonio", "1111"},
-    {"Guindane", "2222"}
-};
-
-//Adicionando em tempo de execução
-phoneBook["Bolsonaro"] = "3333";
-
-// Tratando possível erro de duplicidade
-// da chave
-
-try
+class Program
 {
-    phoneBook.Add("Bolsonaro", "3333");
-}
-catch (System.ArgumentException ae)
-{
-    Console.WriteLine("Chave já existente. " + ae.Message);
-}
-catch (System.Exception ex)
-{
-    Console.WriteLine("Erro imprevisto. " + ex.Message);
-}
-
-//percorrendo valores TableHash
-Console.WriteLine("Caderninho de telefone:");
-if (phoneBook.Count == 0)
-{
-    Console.WriteLine("Agenda vazia.");
-}
-else
-{
-    int i = 1;
-    foreach (DictionaryEntry entry in phoneBook)
+    static void Main()
     {
-        Console.WriteLine($"{i}. {entry.Key} - {entry.Value}");
-        i++;
+        // Criando o dicionário com os produtos e suas áreas
+        Dictionary<string, string> produtos =
+            new Dictionary<string, string>
+            {
+                { "5900000000000", "A1" },
+                { "5901111111111", "B5" },
+                { "5902222222222", "C9" }
+            };
+
+        // Adicionando um produto em tempo de execução
+        produtos["5903333333333"] = "D7";
+
+        // Adicionando usando o método Add()
+        // Tratando possível erro de chave duplicada
+        try
+        {
+            produtos.Add("5904444444444", "A3");
+        }
+        catch (ArgumentException)
+        {
+            Console.WriteLine("A entrada já existe.");
+        }
+
+        // Percorrendo todos os produtos
+        Console.WriteLine("Todos os produtos:");
+
+        if (produtos.Count == 0)
+        {
+            Console.WriteLine("Nenhum produto cadastrado.");
+        }
+        else
+        {
+            foreach (KeyValuePair<string, string> produto in produtos)
+            {
+                Console.WriteLine($" - {produto.Key}: {produto.Value}");
+            }
+        }
+
+        // Busca por código de barras
+        Console.WriteLine();
+        Console.Write("Digite o código de barras: ");
+        string codigoBarras = Console.ReadLine();
+
+        if (produtos.TryGetValue(codigoBarras, out string area))
+        {
+            Console.WriteLine($"O produto está localizado na área {area}.");
+        }
+        else
+        {
+            Console.WriteLine("O produto não existe.");
+        }
     }
-}
-
-//Busca em chave
-Console.WriteLine("");
-Console.WriteLine("Busca por nome:");
-string name = Console.ReadLine();
-
-if (phoneBook.Contains(name))
-{
-    string number = (string)phoneBook[name];
-}
-else
-{
-    Console.WriteLine($"{name} não encontrado.");
-}
-
-// dicionarios
-
-Dictionary<string, string> dic =
-    new Dictionary<string, string>()
-    {
-    {"Carlos", "1234"},
-    {"Gope", "4321"},
-    };
-
-string value = dic["Carlos"];
-dic["Carlos"] = "5678"; // atualizando valor
-foreach(KeyValuePair<string, string> pair in dic)
-{
-    Console.WriteLine($"Chave: {pair.Key}, Valor: {pair.Value}");
 }
